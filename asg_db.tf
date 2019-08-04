@@ -9,7 +9,7 @@ module "mysql" {
 
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
-  security_groups = ["${aws_security_group.privateDB.id}"]
+  security_groups = ["${aws_security_group.privateDB}"]
 
 
   # Auto scaling group
